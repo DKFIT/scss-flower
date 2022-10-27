@@ -1,0 +1,25 @@
+@mixin background {
+    background-color: aqua;
+}
+@mixin tekstas {
+
+    padding-top: 20vh;
+    font-size: 8vw;
+    position: relative;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px hsla(100, 0, 30, 0.5);
+    z-index: 1000;
+    margin: 0;
+}
+@mixin sun {
+    position: absolute;
+    top: 3rem;
+    left: 6rem;
+    width: 5rem;
+    height: 5rem;
+    background-color: #f5ab35;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #f39c12;
+}

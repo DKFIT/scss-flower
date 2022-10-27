@@ -1,0 +1,152 @@
+.container {
+  height: 100vh;
+  background-color: aqua;
+  color: #0a8f20;
+  overflow: hidden;
+}
+
+h1 {
+  padding-top: 20vh;
+  font-size: 8vw;
+  position: relative;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(77, 77, 77, 0.5);
+  z-index: 1000;
+  margin: 0;
+}
+
+.fadein {
+  opacity: 0;
+  -webkit-animation: fadein 1s 2s ease-in forwards;
+          animation: fadein 1s 2s ease-in forwards;
+}
+
+@-webkit-keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  100% {
+    opacity: 1;
+  }
+}
+
+.sun {
+  position: absolute;
+  top: 3rem;
+  left: 6rem;
+  width: 5rem;
+  height: 5rem;
+  background-color: #f5ab35;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 30px #f39c12;
+          box-shadow: 0 0 30px #f39c12;
+}
+
+.slidein {
+  -webkit-transform: translateX(-5rem);
+          transform: translateX(-5rem);
+  -webkit-animation: slidein 3s ease-out forwards;
+          animation: slidein 3s ease-out forwards;
+}
+
+@-webkit-keyframes slidein {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes slidein {
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.flower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flower_head {
+  height: 7rem;
+  width: 7rem;
+  background-color: #8b14ba;
+  border-radius: 50%;
+}
+
+.flower_stem {
+  width: 0.5rem;
+  height: 20rem;
+  max-height: 0;
+  background: #63ff0d;
+}
+
+.flower_stem::after {
+  content: " ";
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  width: 3em;
+  height: 3em;
+  display: block;
+  background: #385e23;
+  border-radius: 2em 0 2em 0;
+}
+
+.grow-12 {
+  -webkit-animation: grow-12 2s 0.5s ease-in-out forwards;
+          animation: grow-12 2s 0.5s ease-in-out forwards;
+}
+
+@-webkit-keyframes grow-12 {
+  100% {
+    max-height: 14rem;
+  }
+}
+
+@keyframes grow-12 {
+  100% {
+    max-height: 14rem;
+  }
+}
+
+.pulse {
+  -webkit-animation: pulse 1s 0.5s ease-in-out infinite alternate;
+          animation: pulse 1s 0.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=main.css.map */
